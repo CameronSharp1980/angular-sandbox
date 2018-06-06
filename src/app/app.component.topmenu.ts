@@ -1,4 +1,6 @@
 import { Component } from "@angular/core";
+import { Iinterface } from "./Iinterface";
+import { usesInterface } from "./usesInterface";
 
 @Component({
     selector: 'TopMenu',
@@ -10,17 +12,21 @@ export class TopMenu {
     dataBinding: string = 'Data Binding';
     eventBinding: string = 'Event Binding';
     clicked: boolean = false;
+    tehInterfacez: usesInterface[] = [
+        new usesInterface("Name 1", 1),
+        new usesInterface("Name 2", 2)
+    ]
 
     _typeType: string = 'Type Here';
-    get clickyClicky(){
+    get clickyClicky() {
         return this._typeType;
     }
-    set clickyClicky(value: string){
+    set clickyClicky(value: string) {
         this._typeType = value;
     }
 
-    clickMe(){
-        if(this.clicked){
+    clickMe() {
+        if (this.clicked) {
             this.clicked = !this.clicked;
             this.eventBinding = 'True';
         } else {

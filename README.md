@@ -3,6 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
 
 Just a little sandbox app to play with as I learn Angular. Will probably filled with cantrip and be blown away several times as I go through misc tutorials and styles guide and continue to learn the ropes.
+Pay no mind to it's Frankenstein-ish appearance, no design is being implemented.
 
 ## Development server
 
