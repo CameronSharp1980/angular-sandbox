@@ -4,9 +4,9 @@
     (click)='clickMe()'>{{dataBinding}} and Event Binding
 
     </li>
-    <li class="top-menu-item clickable"
-        [(ngModel)]='clickyClicky'>
+    <li class="top-menu-item clickable">
+        <input type="text" [(ngModel)]='clickyClicky' />
     </li>
-    <li class="top-menu-item">Item 4</li>
+    <li class="top-menu-item">{{clickyClicky}}</li>
     <li class="top-menu-item">{{clicked}}</li>
 </ul>

@@ -10,20 +10,13 @@ export class TopMenu {
     dataBinding: string = 'Data Binding';
     eventBinding: string = 'Event Binding';
     clicked: boolean = false;
-    clickyBool: boolean = false;
 
-    _clickyClicky: string = 'Clickable';
+    _typeType: string = 'Type Here';
     get clickyClicky(){
-        return this._clickyClicky;
+        return this._typeType;
     }
     set clickyClicky(value: string){
-        if(this.clickyBool){
-            this._clickyClicky = 'Clicked!';
-            this.clickyBool = !this.clickyBool;
-        } else{
-            this.clickyBool = !this.clickyBool;
-            this._clickyClicky = 'Clickable';
-        }
+        this._typeType = value;
     }
 
     clickMe(){
