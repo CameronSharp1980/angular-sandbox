@@ -1,6 +1,5 @@
 import { Component } from "@angular/core";
-import { Iinterface } from "./Iinterface";
-import { usesInterface } from "./usesInterface";
+import { usesInterface } from "../classes/usesInterface";
 
 @Component({
     selector: 'TopMenu',

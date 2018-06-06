@@ -1,5 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div>
   <TopMenu></TopMenu>
+  <p>Nested Components (With Input/Output):</p>
+  <p>{{inputOutputText}}</p>
+  <div class="yo-dawg">
+    <div *ngFor='let dawg of dawgLoopNum; let i = index'>
+      <yo-dawg (output)='inputOutput($event)' [input]='i'></yo-dawg>
+    </div>
+  </div>
 </div>
 

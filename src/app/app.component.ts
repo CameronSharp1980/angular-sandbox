@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular Sandbox';
+  dawgLoopNum: number[] = [1, 2, 3, 4, 5]
+  inputOutputText: string;
+  inputOutput(value: string) {
+    this.inputOutputText = value;
+  }
 }

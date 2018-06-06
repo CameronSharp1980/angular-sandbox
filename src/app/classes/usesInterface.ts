@@ -1,4 +1,4 @@
-import { Iinterface } from "./Iinterface";
+import { Iinterface } from "../interfaces/Iinterface";
 
 export class usesInterface implements Iinterface {
     name: string;
